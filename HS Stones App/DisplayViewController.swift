@@ -16,27 +16,14 @@ class DisplayViewController: UIViewController {
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     
-    var data : String = ""
-    var products : [Product] = []
+    var product: Product!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //nameLabel.text = "\(products[productName])"
-        
-     
-        // Do any additional setup after loading the view.
+
+        nameLabel.text = product.productName
+        priceLabel.text = product.productPrice
+        descriptionLabel.text = product.productDescription
+        typeLabel.text = product.productType
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

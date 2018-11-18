@@ -50,16 +50,13 @@ class ProductsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let row = products[indexPath.row]
+        let product = products[indexPath.row]
         
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let destination = storyboard.instantiateViewController(withIdentifier: "DisplayViewController") as!  DisplayViewController
-        
-        // This will perform the segue you define in IB, with the view controller pre-loaded and configured
-//        let displayViewController = DisplayViewController()
-//        displayViewController.performSegue(withIdentifier: "goToDisplay", sender: self)
-        navigationController?.pushViewController(destination, animated: true)
-        print(row)
+        let displayViewController = storyboard.instantiateViewController(withIdentifier: "DisplayViewController") as!  DisplayViewController
+
+        displayViewController.product = product
+        navigationController?.pushViewController(displayViewController, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
