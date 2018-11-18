@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		53868C92216A25880015B152 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53868C91216A25880015B152 /* AppDelegate.swift */; };
-		53868C94216A25880015B152 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53868C93216A25880015B152 /* ViewController.swift */; };
-		53868C97216A25880015B152 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53868C95216A25880015B152 /* Main.storyboard */; };
 		53868C9A216A25880015B152 /* HS_Stones_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53868C98216A25880015B152 /* HS_Stones_App.xcdatamodeld */; };
 		53868C9C216A25890015B152 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53868C9B216A25890015B152 /* Assets.xcassets */; };
 		53868C9F216A25890015B152 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53868C9D216A25890015B152 /* LaunchScreen.storyboard */; };
+		53868CA7216A27A90015B152 /* ProductsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53868CA6216A27A80015B152 /* ProductsTableViewController.swift */; };
+		53868CA9216A2DB10015B152 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53868CA8216A2DB10015B152 /* CreateViewController.swift */; };
+		53868CAB216A2DFA0015B152 /* DisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53868CAA216A2DFA0015B152 /* DisplayViewController.swift */; };
+		53A9195721728E2B0010479B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53868C95216A25880015B152 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		53868C8E216A25880015B152 /* HS Stones App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HS Stones App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53868C91216A25880015B152 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		53868C93216A25880015B152 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		53868C96216A25880015B152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		53868C99216A25880015B152 /* HS_Stones_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HS_Stones_App.xcdatamodel; sourceTree = "<group>"; };
 		53868C9B216A25890015B152 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53868C9E216A25890015B152 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		53868CA0216A25890015B152 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53868CA6216A27A80015B152 /* ProductsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsTableViewController.swift; sourceTree = "<group>"; };
+		53868CA8216A2DB10015B152 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		53868CAA216A2DFA0015B152 /* DisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				53868C91216A25880015B152 /* AppDelegate.swift */,
-				53868C93216A25880015B152 /* ViewController.swift */,
 				53868C95216A25880015B152 /* Main.storyboard */,
+				53868CAA216A2DFA0015B152 /* DisplayViewController.swift */,
+				53868CA6216A27A80015B152 /* ProductsTableViewController.swift */,
 				53868C9B216A25890015B152 /* Assets.xcassets */,
 				53868C9D216A25890015B152 /* LaunchScreen.storyboard */,
 				53868CA0216A25890015B152 /* Info.plist */,
 				53868C98216A25880015B152 /* HS_Stones_App.xcdatamodeld */,
+				53868CA8216A2DB10015B152 /* CreateViewController.swift */,
 			);
 			path = "HS Stones App";
 			sourceTree = "<group>";
@@ -125,9 +131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53A9195721728E2B0010479B /* Main.storyboard in Resources */,
 				53868C9F216A25890015B152 /* LaunchScreen.storyboard in Resources */,
 				53868C9C216A25890015B152 /* Assets.xcassets in Resources */,
-				53868C97216A25880015B152 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53868C94216A25880015B152 /* ViewController.swift in Sources */,
+				53868CAB216A2DFA0015B152 /* DisplayViewController.swift in Sources */,
+				53868CA9216A2DB10015B152 /* CreateViewController.swift in Sources */,
 				53868C9A216A25880015B152 /* HS_Stones_App.xcdatamodeld in Sources */,
+				53868CA7216A27A90015B152 /* ProductsTableViewController.swift in Sources */,
 				53868C92216A25880015B152 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

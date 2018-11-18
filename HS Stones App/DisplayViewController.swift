@@ -9,10 +9,22 @@
 import UIKit
 
 class DisplayViewController: UIViewController {
-
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var typeLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var data : String = ""
+    var products : [Product] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        //nameLabel.text = "\(products[productName])"
+        
+     
         // Do any additional setup after loading the view.
     }
     
